@@ -1,0 +1,17 @@
+@import './_reset.css';
+@import './_settings.css';
+
+/* Write some css! */
+
+body {
+    font-family: system-ui;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
