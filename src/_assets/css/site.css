@@ -1,17 +1,28 @@
 @import './_reset.css';
 @import './_settings.css';
+@import './_typography.css';
+@import './_nav.css';
+
 
 /* Write some css! */
 
 body {
-    font-family: system-ui;
+    font-family: "Gotham A", "Gotham B";
+    color: var(--default-text);
+    backbround: var(--light-bg);
 }
 
 a {
     text-decoration: none;
+    color: #1A4055;
 
     &:hover {
         text-decoration: underline;
     }
 }
 
+.hero {
+    width: 100%;
+    height: 40vw;
+    background: #eee;
+}

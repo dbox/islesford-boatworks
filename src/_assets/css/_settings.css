@@ -11,7 +11,12 @@
     /* General */
     /* Buttons */
     /* Backgrounds */
+
+    --light-bg: #FDFCF9;
     /* Typography */
     /* Interactive */
+
+    --link-underline: #FEF3D8;
+    --link-text: #13587E;
     /* Borders */
 }

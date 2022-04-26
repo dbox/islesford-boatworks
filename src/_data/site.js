@@ -1,5 +1,5 @@
 module.exports = {
-  isProduction: process.env.ELEVENTY_ENV === 'production',
+  isProduction: process.env.ELEVENTY_ENV === 'dev',
   title: 'Site Title',
   description: 'This is the site description',
   url: 'https://www.kurtnoble.com',
