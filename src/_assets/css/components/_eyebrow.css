@@ -1,0 +1,43 @@
+.eyebrow {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: var(--eyebrow-bg);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+
+    & a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }        
+
+        &.close {
+            display: block;
+            background:  #0E3A66 url('/static/images/icons/close.svg') no-repeat center center;
+            transition: background-color .2s ease;
+            &:hover {
+                background-color: #04203D;
+            }
+        }
+    }
+    & a span {
+        display:none;
+    }
+    & > p {
+        flex: 1;
+        text-align: center;
+        padding: .5vw;
+        /* padding-left: 7vw; */
+    }
+
+    & > a {
+        display: block;
+        width: 36px;
+        color: #fff;
+        background-color: var( --eyebrow-link);
+        text-align: center;
+    }
+}

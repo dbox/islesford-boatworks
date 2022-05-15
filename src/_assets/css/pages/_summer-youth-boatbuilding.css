@@ -1,0 +1,35 @@
+.summer-youth-boatbuilding {
+    & .container {
+        
+
+
+    }
+}
+
+#programs-hero {
+    position: relative;
+    color: #fff;
+
+    & h1 {
+        line-height: 1.1;
+        margin-bottom: 1vw;
+    }
+    & figure {
+        position: relative;
+    }
+
+    & figure img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 4/1;
+    }
+    & article {
+        padding: 5vw 9vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: auto;
+        z-index: 2;
+    }
+}

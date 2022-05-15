@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    box-shadow: 0 0 0 1px #ddd;
+    flex-direction: column;
+    transition: box-shadow .3s ease-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 .4vw #3A6BA5;
+    transition: box-shadow .1s ease-out;
+}
+
+.card h5 {
+    font-size: 1.1vw;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1vw;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.card p {
+    padding-bottom: 1vw;
+    font-size: .9vw;
+}
+.card span {
+    font-weight: 500;
+    color: #135D92;
+    margin-top: auto;
+    font-size: .9vw;
+}
+
+.card article {
+    padding: 1.6vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.card a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;      
+}
+
+.container.bottom-cards {
+    display: flex;
+    margin-top: 5em;
+    border-top: 1px solid var(--light-border);
+    padding-top: 5em;
+    justify-content: space-between;
+
+    & .card {
+        width: 30%;
+    }
+}

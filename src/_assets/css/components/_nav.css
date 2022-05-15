@@ -1,0 +1,152 @@
+:root {
+    --nav-padding: 0;
+    --nav-font-size: 14px;
+    --nav-height: 60px;
+}
+
+nav.primary {
+    padding: 1.5vw 5vw 0;
+
+    & ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    & > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;        
+    }
+
+    & ul > li {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        &:not(:nth-child(1)) a {
+            padding: 1.5vw;
+            padding-top: calc(var(--nav-height) - 14px);
+
+            &:hover span:after {
+                height: .5rem;
+            }
+        }
+
+        &:nth-child(2),  &:nth-child(3), &:nth-child(4) {
+            padding-right: var(--nav-padding);
+        }
+
+        &:nth-child(5),  &:nth-child(6), &:nth-child(7) {
+            padding-left: var(--nav-padding);
+        }        
+        &#home {
+            order: 3;
+            flex: 1;
+        }
+        &#programs {
+            order: 0;
+        }
+        &#schedule {
+            order: 1;
+        }  
+        &#about {
+            order: 2;
+        }  
+        &#contact {
+            order: 4;
+        }
+        &#store {
+            order: 5;
+        }  
+        &#donate {
+            order: 6;
+        }                                  
+        
+    }
+
+    & a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: var(--nav-font-size);
+        /* text-align: left; */
+
+
+        & span {
+            display: inline-block;
+            position: relative;            
+        }
+
+        & span:after {
+            content: '';
+            position: absolute;
+            bottom: 0rem;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: var(--link-underline);
+            z-index: -1;
+            transition: all .3s ease;
+        }
+
+        &:hover span{
+            text-decoration: none;
+            color: var(--link-text);
+        }
+    }
+
+    & img {
+        width: auto;
+        height: var(--nav-height);
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+header #about {
+    position: relative;
+}
+nav.subnav {
+    opacity: 0;
+    position: absolute;
+    width: 22vw;
+    top: 5vw;
+    left: 0;
+    background: rgba(0,38,100,.85);
+    color: #fff;
+    z-index: 4;
+    display: block;
+    transition: all .2s ease;
+
+    &.active {
+        opacity: 1;
+    }
+
+    & ul {
+        padding: 2vw;
+    }
+
+    & ul li {
+
+        &:nth-child(1),  &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+
+            & a {
+                padding: .5vw 1vw;
+                text-align: left;
+                color: #fff;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        display: block;
+    }
+
+}
+
+.schedule #schedule {
+    cursor: default !important;
+}

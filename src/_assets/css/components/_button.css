@@ -1,0 +1,12 @@
+.btn {
+    display: inline-block;
+    background-color: #2061A1;
+    color: #fff;
+    padding: 2% 7%;
+    margin: auto auto 0 auto;
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: #062F58;
+    }
+}

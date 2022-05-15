@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Welcome
+bodyClass: home
 ---
 
 {# {%- from "macros.njk" import component -%}
@@ -10,12 +11,166 @@ title: Welcome
         {{ component("headings/title", { content: "Title Component" }) }}
     </div> #}
 
-    <div class="hero"></div>
+<section id="hero">
+    <div class="main-carousel">
+        <div class="carousel-cell">
+            <figure><img src="/static/images/hero/1.jpg"></figure>
+            <article>
+                <span>
+                    <h1>Building <em>Kids</em>
+                    </span><br> with Boats</h1>
+            </article>
+        </div>
 
-{# <h1>Welcome to {{ site.title }}</h1>
+        <div class="carousel-cell">
+            <figure><img src="/static/images/hero/2.jpg"></figure>
+            <article>
+                <span>
+                    <h1>Building <em>Community</em>
+                    </span><br>  with Boats</h1>
+            </article>
+        </div>
+        <div class="carousel-cell">
+            <figure><img src="/static/images/hero/3.jpg"></figure>
+            <article>
+                <span>
+                    <h1>Building <em>Opportunity</em>
+                    </span><br>  with Boats</h1>
+            </article>
+        </div>
+        <div class="carousel-cell">
+            <figure><img src="/static/images/hero/4.jpg"></figure>
+            <article>
+                <span>
+                    <h1>Building <em>a Future</em>
+                    </span><br>  for Maine's Working Waterfront</h1>
+            </article>
+        </div>
+    </div>
+</section>
 
-<p>Now <a href="{{ site.url }}">get busy<a>.</p> #}
+<section id="intro">
+    <article>
+        <p>Welcome to Islesford Boatworks! We’re a non-profit community-based boatbuilding program for folks of all ages situated on Little Cranberry Island, Maine. Through our programs, services and events, we strive to accomplish our mission to build opportunity, community, and a future for Maine’s working waterfront. </p>
+    </article>
+    <aside>
+        <h6>Quick Links</h6>
+        <ul>
+            <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoU-4kkxjE-W6mKN6frch8SiH-xOpU7qjbMpj3oCp0N2OCow/viewform" _target="_blank">Register for Summer 2022</a>
+            </li>
+            <li>
+                <a href="/schedule">Summer 2022 Schedule</a>
+            </li>
+            {# <li>
+                <a href="#">Shop the Chandlery Online</a>
+            </li> #}
+            <li>
+                <a href="#">Frequently Asked Questions</a>
+            </li>
+        </ul>
+    </aside>
+</section>
 
-        <footer>
-    Copyright {{ site.currentYear }}
-        </footer>
+<section id="programs-events-section">
+    <div class="card">
+        <a href="/summer-youth-boatbuilding">
+        <img src="/static/images/summer-boatbuilding.jpg">
+        <article>
+            <h5>Summer Youth Boatbuilding</h5>
+            <p>We offer three different levels of programs, teaching kids from 7-17 the fundamentals of boatbuilding. Working together, we [launch a new boat] at the end of the summer.</p>
+            <span>Learn more</span>
+       </article>
+       </a>
+    </div>
+    <div class="card">
+        <a href="/teen-apprentice-program">
+            <img src="/static/images/teen-apprentice.jpg">
+            <article>
+                <h5>Teen Apprentice Program</h5>
+                <p>After a successful pilot in 2021, the Teen Apprentice program is back this year. Paid internships are available for ages 13-17.</p>
+                <span>Learn more</span>
+            </article>
+        </a>
+    </div>
+    <div class="card">
+        <a href="#">
+        <img src="/static/images/school-year-woodworking.jpg">
+        <article>
+            <h5>School Year Woodworking</h5>
+            <p>Serving our local K-8 school, kids join us weekly in the shop as part of their school day, where we provide real world applications to support concepts taught in the classroom.</p>
+            <span>Learn more</span>
+        </article>
+        </a>
+    </div>
+    <div class="card">
+        <a href="/programs-events/#community-events">
+            <img src="/static/images/community-events.jpg">
+            <article>
+                <h5>Community Events</h5>
+                <p>Music jams, lecture series, our morning coffee club,  ladies night and more, we have events for all ages and interests. All our events are free and open to all.</p>
+                <span>Learn more</span>
+            </article>
+        </a>
+    </div>
+</section>
+
+<section id="story">
+    <div class="top">
+    <article>
+        <h2>Community-based Boatbuilding on Little Cranberry Island, Maine</h2>
+        <p>More than just boatbuilding, we serve as a <a href="#">community hub</a> providing a place for all ages to gather, to share, and to learn throughout the year.</p>
+        <a href="#" class="img-caption" data-tooltip="The Emmett and Owen outside of the Blue Duck ready for launch day."><img src="/static/images/story-blue-duck.jpg"></a>
+    </article>
+    <article>
+        <a href="#" class="img-caption" data-tooltip="Math, something else skills combine lorem ipsum dolor set amit"><img src="/static/images/story-sail.jpg"></a>
+        <p>In 2018, Islesford Boatworks moved into its new home on the shore, <a href="#">The Blue Duck</a>, a  historic waterfront building from 1852 that had been derelict for many years and was brought back to life for Boatworks through community support.</p>
+        {# <a href="#">The Blue Duck</a> #}
+    </article>
+    </div>
+    <div class="bottom">
+    <article>
+        <a href="#" class="img-caption" data-tooltip="Since 2006 we've launched 15 boats. Launch day is always a fun community celebration."><img src="/static/images/story-launch.jpg"></a>
+        <p>Each summer we <a href="#">launch a new boat</a>, built with the combined efforts of our island’s kids and adults. From supporting the working waterfront, providing access to our waterways, to preserving local history, all of our boats serve the community in some way.</p>
+        {# <a href="#">Our Boats</a> #}
+    </article>
+    <article>
+        <p>The <a href="#">Courtney Cup</a> is a summer-long ongoing rowing competition inspired by island legend, Courtney Chaplin and his love of boating and rowing. The Cup is open to anyone and everyone of any age and skill level.</p>
+        {# <a href="#">The Courtney Cup</a> #}
+        <a href="#" class="img-caption" data-tooltip="Team Teamname taking the Bridge on a morning run for the Courney Cup"><img src="/static/images/story-courtney-cup.jpg"></a>
+    </article>
+    </div>
+
+</section>
+
+{# <section id="newsletter">
+    <h3>Sign up for our newsletter</h3>
+    <p></p>
+</section> #}
+<section id="photo-break"></section>
+
+<section id="get-involved">
+    <h2>Help us build.</h2>
+    <p>Islesford Boatworks is a passionate community of supporters, neighbors, and friends; we are family. Thank you in advance for your donation of time, money, encouragement & support. We couldn’t do it without you!</p>
+    <div class="categories">
+        <article>
+            <img src="/static/images/icons/volunteer.svg">
+            <h3>Volunteer</h3>
+            <p>We are always looking for volunteers to join us in the shop, either during classes with our students or behind the scenes helping with prep work. We also need help coordinating our community events and making improvements to our waterfront home. </p>
+            <a href="#" class="btn">Let's talk</a>
+        </article>           
+        <article>
+            <img src="/static/images/icons/donate.svg">
+            <h3>Make a donation</h3>
+            <p>You can make a huge impact in our organization and community. Your donation keeps the lights on, tools running and ensures everyone can participate. If you are able to support IB financially, we truly appreciate it. We wouldn’t be here without your support.</p>
+            <a href="#" class="btn">Donate</a>
+        </article>
+
+        <article>
+            <img src="/static/images/icons/chandlery.svg">
+            <h3>Support the Chandlery</h3>
+            <p>Our Chandlery is more than a hardware store. We sell handmade wood crafts, unique items and IB Merch, all in support of our programming. You can help through shopping at our chandlery, or by donate items for us to sell. </p>
+            <a href="#" class="btn">Shop online</a>
+        </article>                
+    </div>
+</section>

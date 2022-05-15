@@ -1,0 +1,29 @@
+@custom-media --desktop-small (max-width: 1024px);
+
+:root {
+    --base-font-size: 16px;
+    --global-border-radius: 3px;
+    --mobile-gutter: 5%;
+
+    
+    /* colors by name */
+    --white: #fff;
+    --black: #000;
+
+    /* Colors by Type */
+    /* General */
+    /* Buttons */
+    /* Backgrounds */
+
+    --light-bg: #FDFCF9;
+    --eyebrow-bg: #215587;
+    /* Typography */
+    --default-text: #1A4055;
+    /* Interactive */
+
+    --link-underline: #FEF3D8;
+    --link-text: #13587E;
+    --eyebrow-link: #0E3A66;
+    /* Borders */
+    --light-border: #eee;
+}

@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: 'Boston Skyline Clean';
+    src: url('../static/fonts/BostonSkylineClean.woff2') format('woff2'),
+        url('../static/fonts/BostonSkylineClean.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, p > a {
+    font-family: "Gotham A", "Gotham B";
+}
+
+h3, h4, h5, h6, nav {
+    font-family: "Decimal A", "Decimal B";
+    font-style: normal;
+    font-weight: 400;
+}
+
+nav {
+    font-weight: 500; 
+}
+
+h1, h2 {
+    font-family: "Decimal 2 A", "Decimal 2 B";
+    font-style: normal;
+    font-weight: 200;
+}
+.btn, .footer-links, #intro aside a{
+    font-family: "Decimal A", "Decimal B";
+    font-weight: 500;
+}
+h1 {
+    font-size: 56px;
+    letter-spacing: -0.05em;
+}
+
+h1 em {
+    font-family: 'Boston Skyline Clean';
+}
+
+p a, span a, #intro ul li a {
+    color: #135D92;
+    text-decoration: none;
+    font-weight: 500;
+}
+.intro {
+    font-weight: 500;
+    font-size: 1.3vw;
+    line-height: 1.4;
+}

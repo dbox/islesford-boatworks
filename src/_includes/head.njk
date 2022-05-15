@@ -21,8 +21,10 @@
 <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
 
 <!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<meta name="robots" content="index,follow">
+<!-- All Search Engines -->
+<meta name="googlebot" content="index,follow">
+<!-- Google Specific -->
 
 <!-- Tells Google not to show the sitelinks search box -->
 <meta name="google" content="nositelinkssearchbox">
@@ -38,16 +40,18 @@
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-<title>{% if title %}{{ title }} • {% endif %}{{ site.title }}</title>
+<title>
+  {% if title %}{{ title }} • {% endif %}{{ site.title }}</title>
 
 <!-- Links to information about the author(s) of the document -->
 <link rel="author" href="/humans.txt">
 
 <!-- Favicons -->
-<link rel="icon" href="/static/images/favicons/favicon.svg">
+<link rel="icon" href="/static/images/favicons/favicon.png">
+<!--<link rel="icon" href="/static/images/favicons/favicon.svg">
 <link rel="alternate icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/static/images/favicons/apple-touch-icon.png">
-<link rel="mask-icon" href="/static/images/favicons/mask-icon.svg" color="#000000">
+<link rel="mask-icon" href="/static/images/favicons/mask-icon.svg" color="#000000"> -->
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#ffffff">
 
@@ -56,9 +60,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
 {% if site.meta.default_social_image or featured_image %}
-  <meta property="og:image" content="{% if env == 'production' %}{{ site.url }}{% endif %}{% if featured_image  %}{{ featured_image }}{% else %}{{ site.meta.default_social_image }}{% endif %}" />
+  <meta property="og:image" content="{% if env == 'production' %}{{ site.url }}{% endif %}{% if featured_image  %}{{ featured_image }}{% else %}{{ site.meta.default_social_image }}{% endif %}"/>
 {% endif %}
-<meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}"/>
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="{{ site.author }}">
@@ -72,4 +76,28 @@
 <meta name="twitter:dnt" content="on">
 
 <!-- Typography.com -->
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6834332/6043432/css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6834332/6043432/css/fonts.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+
+<script>
+  $(document).ready(function () {
+    console.log("lessgo!");
+
+    $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      fade: true,
+      wrapAround: true,
+      autoPlay: true,
+      draggable: false,
+      autoPlay: 4000
+    });
+    $("#about").hover(function () {
+      $(".subnav").toggleClass("active");
+    });
+
+  });
+</script>
