@@ -1,0 +1,45 @@
+#get-involved h2 {
+    font-size: 2.6vw;
+    letter-spacing: -.05em;
+    line-height: 1.2;
+    margin-bottom: 1.3vw;
+    font-weight: 100;
+}
+
+#get-involved {
+    text-align: center;
+    padding: 5vw 7vw;
+}
+#get-involved .categories {
+    display: flex;
+}
+#get-involved > p {
+    max-width: 65vw;
+    margin: 0 auto 3.5vw;
+}
+#get-involved article {
+    width: 33%;
+    padding: 0 3.3vw 3.3vw 3.3vw;
+    font-size: .9vw;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        margin-bottom: 2vw;
+    }
+}
+#get-involved article:not(:last-of-type) {
+    border-right: 1px solid #ddd;
+}
+#get-involved img {
+    display: block;
+    margin: 0 auto;
+}
+#get-involved h3 {
+    margin: .5vw 0 1.5vw;
+    font-weight: 500;
+}
+
+#get-involved .btn {
+    max-width: 10vw;
+}

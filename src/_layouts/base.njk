@@ -14,49 +14,8 @@
         <main>
             {{ content | safe }}
         </main>
+        {% include "components/footer.njk" %}
 
-        <footer role="contentinfo">
-            <div class="info">
-                <img src="/static/images/logo-horizontal@2x.png" class='footer-logo'>
-                <p>We are a 501(c)(3) non-profit community-based summer boatbuilding program for children ages 7 to 97 years young situated on Little Cranberry Island, Maine.
-
-Out mission is building opportunity, community, and a future for Maine’s working waterfront.</p>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="/programs-events">Programs & Events</a></li>
-                    <li><a href="/summer-youth-boatbuilding">Summer Youth Boatbuilding</a></li>
-                    <li><a href="/teen-apprentice-program">Teen Apprentice Program</a></li>
-                    <li><a href="/school-year-woodworking">School Year Woodworking</a></li>                    
-                    <li><a href="#">Schedule</a></li>
-                    <li><a href="#">Our Mission & History</a></li>
-
-                </ul>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Our Boats</a></li>
-                    {# <li><a href="#">The Blue Duck</a></li> #}
-                    <li><a href="#">Frequently Asked Questions</a></li>
-                    <li><a href="#">Join the Mailing List</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Shop the Chandlery</a></li>
-                    <li><a href="#">Donate</a></li>                    
-                </ul>
-            </div>
-            <div class="extras">
-                <div class="social">
-                    <a href="https://instagram.com/islesfordboatworks" target="_blank"><img src="/static/images/icons/social-instagram.svg"></a>
-                    <a href="#"><img src="/static/images/icons/social-youtube.svg"></a>  
-                    <a href="#"><img src="/static/images/icons/social-twitter.svg"></a>
-                    <a href="#"><img src="/static/images/icons/social-facebook.svg"></a>                  
-                </div>
-                <div class="legal">
-                    <p>PO Box 261<br>Islesford ME 04646<br> 347-236-9092<br><br>&copy; {{ site.currentYear }} Islesford Boatworks. </p>
-                </div>
-            </div>            
-
-        </footer>
 
     </body>
 </html>

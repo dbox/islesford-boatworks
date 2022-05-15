@@ -15,7 +15,7 @@
 
 .programs-events {
 
-    & h3 {
+    & #boatbuilding h3, & #community-events h3 {
         font-family: "Decimal 2 A", "Decimal 2 B";
         font-size: 2vw;
         margin-bottom: 2vw;

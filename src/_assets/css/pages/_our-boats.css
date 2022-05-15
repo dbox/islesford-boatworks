@@ -1,0 +1,46 @@
+.our-boats {
+    & .container {
+        & div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8%;
+
+            &:nth-of-type(odd) > article {
+                order:1;
+                width: 33%
+            }
+            &:nth-of-type(odd) > figure {
+                order:0;
+                width: 62%;
+            }  
+            &:nth-of-type(even) > article {
+                width: 33%
+            }
+            &:nth-of-type(even) > figure {
+                order:0;
+                width: 62%;
+            }                           
+        }
+    }
+}
+
+.our-boats .boat-container h3 {
+    font-size: 1.4vw;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.3em;
+}
+.our-boats .boat-container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-boats .boat-container img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.our-boats .date {
+    color: var(--p-eyebrow);
+    font-weight: 800;
+}

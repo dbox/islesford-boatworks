@@ -9,17 +9,25 @@
     /* colors by name */
     --white: #fff;
     --black: #000;
+    --boatworks-blue: #2061A1;
+    --boatworks-blue-darker: #062F58;
+    --blue-pop: #0367CB;
 
     /* Colors by Type */
     /* General */
     /* Buttons */
     /* Backgrounds */
-
     --light-bg: #FDFCF9;
     --eyebrow-bg: #215587;
+    --footer-bg: var(--boatworks-blue-darker);
+
     /* Typography */
     --default-text: #1A4055;
+    --p-eyebrow: var(--blue-pop);
+
     /* Interactive */
+    --button-primary: var(--boatworks-blue);
+    --button-primary-hover: var(--boatworks-blue-darker);
 
     --link-underline: #FEF3D8;
     --link-text: #13587E;
