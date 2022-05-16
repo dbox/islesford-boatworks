@@ -24,6 +24,7 @@
     /* Typography */
     --default-text: #1A4055;
     --p-eyebrow: var(--blue-pop);
+    --standout-text: var(--boatworks-blue-darker);
 
     /* Interactive */
     --button-primary: var(--boatworks-blue);

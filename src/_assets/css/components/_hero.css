@@ -43,3 +43,7 @@
         z-index: 2;
     }
 }
+
+.faq .hero figure {
+    height: 30vw;
+}
