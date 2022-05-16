@@ -10,7 +10,23 @@ bodyClass: home
     <div class="container">
         {{ component("headings/title", { content: "Title Component" }) }}
     </div> #}
+<script>
+  $(document).ready(function () {
+    console.log("lessgo!");
 
+    $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      fade: true,
+      wrapAround: true,
+      autoPlay: true,
+      draggable: false,
+      autoPlay: 3000
+    });
+
+  });
+</script>
 <section id="hero">
     <div class="main-carousel">
         <div class="carousel-cell">

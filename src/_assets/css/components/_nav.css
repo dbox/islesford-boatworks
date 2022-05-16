@@ -109,8 +109,10 @@ header #about {
     position: relative;
 }
 nav.subnav {
-    opacity: 0;
+    visibility: hidden;
+    transform: translateY(3vw);
     position: absolute;
+    opacity: 0;
     width: 22vw;
     top: 5vw;
     left: 0;
@@ -118,10 +120,13 @@ nav.subnav {
     color: #fff;
     z-index: 4;
     display: block;
-    transition: all .2s ease;
+    transition: all 0 ease;
 
     &.active {
+        transition: all .3s ease;        
         opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
     }
 
     & ul {

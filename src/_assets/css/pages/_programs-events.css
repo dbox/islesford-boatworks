@@ -47,3 +47,18 @@
     }
 }
 
+
+.programs-events #community-events .card-container .card {
+    transition: none;
+    cusor: pointer;
+
+    & h5 {
+        color: #333;
+    }
+    & span {
+        display: none;
+    }
+    &:hover {
+        box-shadow: 0 0 0 1px #ddd;
+    }
+}

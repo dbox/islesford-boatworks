@@ -92,21 +92,13 @@
       fade: true,
       wrapAround: true,
       autoPlay: true,
+      pauseAutoplayOnHover: false,
       draggable: false,
+      imagesLoaded: true,
+      lazyLoad: true,
       autoPlay: 3000
     });
 
-      $('.secondary-carousel').flickity({
-      // options
-      cellAlign: 'left',
-      contain: true,
-      fade: true,
-      wrapAround: true,
-      autoPlay: false,
-      draggable: false,
-      autoPlay: 3000
-    });
-    
     //toggle subnav
     $("#about").hover(function () {
       $(".subnav").toggleClass("active");
