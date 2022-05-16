@@ -66,16 +66,14 @@ https://flickity.metafizzy.co
   }
 
 .sub {
-  height: 0;
+  height: auto;
   width: 100%;
-  padding-bottom: 50%;
 
     & img {
       width: 100%;
-      height: auto;
-      border: 1px solid green;
+      /* height: auto; */
       object-fit: cover;
       object-align: bottom center;
-      aspect-ratio: 2/1;
+      aspect-ratio: 3/2;
     }
   }

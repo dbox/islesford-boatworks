@@ -44,3 +44,6 @@
     color: var(--p-eyebrow);
     font-weight: 800;
 }
+.our-boats .hero article {
+    width: 65vw;
+}

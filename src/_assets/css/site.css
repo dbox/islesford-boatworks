@@ -17,6 +17,7 @@
 @import './pages/_summer-youth-boatbuilding.css';
 @import './pages/_our-boats.css';
 @import './pages/_faq.css';
+@import './pages/_about.css';
 
 @keyframes fadeup {
     0% {
