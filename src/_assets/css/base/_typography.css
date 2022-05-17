@@ -21,7 +21,7 @@ nav {
     font-weight: 500; 
 }
 
-h1, h2 {
+h1, h2, blockquote {
     font-family: "Decimal 2 A", "Decimal 2 B";
     font-style: normal;
     font-weight: 200;

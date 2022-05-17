@@ -119,11 +119,11 @@ header #about {
 }
 nav.subnav {
     visibility: hidden;
-    transform: translateY(3vw);
+    transform: translateY(10px);
     position: absolute;
     opacity: 0;
     width: 22vw;
-    top: 5vw;
+    top: 78px;
     left: 0;
     background: rgba(0,38,100,.85);
     color: #fff;
