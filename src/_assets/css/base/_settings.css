@@ -1,4 +1,4 @@
-@custom-media --desktop-small (max-width: 1024px);
+@custom-media --mobile (max-width: 1000px);
 
 :root {
     --base-font-size: 16px;

@@ -12,6 +12,7 @@ nav.primary {
         margin: 0;
         padding: 0;
         text-align: left;
+
     }
 
     & > ul {
@@ -103,6 +104,14 @@ nav.primary {
         height: var(--nav-height);
         display: inline-block;
         margin: 0 auto;
+    }
+
+}
+nav.primary ul {
+
+    @media (--mobile) {
+        opacity: 0;
+
     }
 }
 header #about {

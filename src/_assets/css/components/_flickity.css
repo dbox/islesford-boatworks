@@ -67,7 +67,7 @@ https://flickity.metafizzy.co
 
 .sub {
   width: 100%;
-  padding-bottom: 66%;
+  border: 1px solid transparent;
 
     & img {
       width: 100%;

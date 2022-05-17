@@ -3,6 +3,9 @@
     <head>
         {% include "head.njk" %}
         <link rel="stylesheet" href="/assets/site.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>        
         <script src="/assets/site.js" defer></script>
     </head>
     <body {% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
@@ -15,6 +18,7 @@
             {{ content | safe }}
         </main>
         {% include "components/footer.njk" %}
+        
 
 
     </body>
