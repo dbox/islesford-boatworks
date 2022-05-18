@@ -15,15 +15,13 @@ var mainSlider = new Flickity('.main-carousel', {
   pageDots: true,
 })
 
-// var secondarySlider = new Flickity('.secondary-carousel', {
-//   cellAlign: 'left',
-//   contain: true,
-//   wrapAround: true,
-//   autoPlay: true,
-//   pauseAutoplayOnHover: false,
-//   draggable: false,
-//   imagesLoaded: true,
-//   lazyLoad: true,
-//   autoPlay: 3000,
-//   pageDots: true,
-// })
+var secondarySlider = new Flickity('.secondary-carousel', {
+  cellAlign: 'left',
+  contain: true,
+  fade: true,
+  wrapAround: true,
+  draggable: false,
+  imagesLoaded: true,
+  lazyLoad: true,
+  autoPlay: 3000,
+})
