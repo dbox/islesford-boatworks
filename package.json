@@ -51,8 +51,8 @@
     "lint": "eslint src/_assets/js/site.js"
   },
   "dependencies": {
-    "flickity": "^3.0.0",
-    "flickity-fade": "^2.0.0",
+    "flickity": "^2.3.0",
+    "flickity-fade": "^1.0.0",
     "jquery": "^3.6.0"
   }
 }
