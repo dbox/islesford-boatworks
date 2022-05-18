@@ -14,6 +14,9 @@ $(document).ready(function () {
       autoPlay: 3000
     });
 
+    //animate eyebrow
+
+    $('.home .eyebrow').slideToggle();
     //toggle subnav
     $("#about").hover(function () {
       $(".subnav").toggleClass("active");
