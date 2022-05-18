@@ -126,8 +126,11 @@ nav.primary {
     }
 
     & > a {
+        text-transform: uppercase;
+        color: var( --min-contrast);
+        font-size: 14px;
         border-left: 1px solid var(--light-border);
-        padding: 22px;
+        padding: 24px;
     }
     
     @media (--desktop) {

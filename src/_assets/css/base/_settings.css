@@ -1,11 +1,13 @@
 @custom-media --mobile (max-width: 1000px);
 @custom-media --desktop (min-width: 1000px);
 
+
 :root {
     --base-font-size: 16px;
     --global-border-radius: 3px;
     --mobile-gutter: 5%;
-
+    --hero-height: 45vw;
+    --hero-height-mobile: 70vh;
     
     /* colors by name */
     --white: #fff;
@@ -13,6 +15,8 @@
     --boatworks-blue: #2061A1;
     --boatworks-blue-darker: #062F58;
     --blue-pop: #0367CB;
+    --medium-gray: #626F7B;
+ 
 
     /* Colors by Type */
     /* General */
@@ -26,6 +30,7 @@
     --default-text: #1A4055;
     --p-eyebrow: var(--blue-pop);
     --standout-text: var(--boatworks-blue-darker);
+    --min-contrast: var(--medium-gray);
 
     /* Interactive */
     --button-primary: var(--boatworks-blue);

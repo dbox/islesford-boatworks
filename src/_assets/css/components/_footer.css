@@ -1,28 +1,21 @@
 footer[role=contentinfo] {
     background-color: var(--footer-bg);
-    color: #fff;
-    @media (--mobile) {
-        min-height: 100vh;
-    }
-}
-footer[role=contentinfo]  {
-    color: #fff;
     padding: 5vw 9vw;
-
     font-size: 15px;
-    color: rgba(255,255,255,.75);
-
+    color: rgba(255,255,255,.75);    
+    
     @media (--mobile) {
         flex-wrap: wrap;
-        padding-top: 9vw;
+        padding-top: 9vw;        
+        min-height: 100vh;
     }
-
     @media (--desktop) {
         font-size: .9vw;
         display: flex;
         justify-content: space-between;        
-    }
+    }    
 }
+
 footer[role=contentinfo] ul {
     list-style-type: none;
     margin: 0;
