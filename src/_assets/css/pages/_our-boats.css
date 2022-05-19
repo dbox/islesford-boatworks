@@ -1,33 +1,55 @@
 .our-boats {
     & .container {
+        padding-top: 5%;
         & div {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 8%;
+            @media(--mobile) {
+                margin-bottom: 9%;
+                flex-direction: column;
 
-            &:nth-of-type(odd) > article {
-                order:1;
-                width: 33%
+                & > figure {
+                    order: 0;
+                    margin-bottom: 5%;
+                }
+                & > article {
+                    order: 1;
+                    padding-bottom: 8%;
+                    border-bottom: 1px solid var(--light-border);
+                }                
             }
-            &:nth-of-type(odd) > figure {
-                order:0;
-                width: 62%;
-            }  
-            &:nth-of-type(even) > article {
-                width: 33%
-            }
-            &:nth-of-type(even) > figure {
-                order:0;
-                width: 62%;
-            }                           
+            @media(--desktop) {
+
+                justify-content: space-between;
+                margin-bottom: 8%;
+    
+                &:nth-of-type(odd) > article {
+                    order:1;
+                    width: 33%
+                }
+                &:nth-of-type(odd) > figure {
+                    order:0;
+                    width: 62%;
+                }  
+                &:nth-of-type(even) > article {
+                    width: 33%
+                }
+                &:nth-of-type(even) > figure {
+                    order:0;
+                    width: 62%;
+                }   
+            }                        
         }
     }
 }
 
 .our-boats .boat-container h3 {
-    font-size: 1.4vw;
     letter-spacing: -0.02em;
     margin-bottom: 1.3em;
+    font-size: 4vw;
+
+    @media(--desktop) {
+        font-size: 1.4vw;
+    }
 }
 .our-boats .boat-container article {
     display: flex;
@@ -43,7 +65,12 @@
 .our-boats .date {
     color: var(--p-eyebrow);
     font-weight: 800;
+    @media(--mobile) {
+        font-size: 12px;
+    }
 }
 .our-boats .hero article {
-    width: 65vw;
+    @media(--desktop) {
+        width: 65vw;
+    }
 }
