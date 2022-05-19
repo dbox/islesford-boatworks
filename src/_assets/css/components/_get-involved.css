@@ -1,39 +1,67 @@
 #get-involved h2 {
-    font-size: 2.6vw;
+
     letter-spacing: -.05em;
     line-height: 1.2;
-    margin-bottom: 1.3vw;
+    margin-bottom: 3vw;
     font-weight: 100;
+    font-size: 5vw;
+
+    @media(--desktop) {
+        font-size: 2.6vw;
+        margin-bottom: 1.3vw;        
+    }
 }
 
 #get-involved {
-    text-align: center;
-    padding: 5vw 7vw;
+    padding: 5% var(--mobile-gutter);
+    @media(--desktop) {
+        text-align: center;
+        padding: 5vw 7vw;
+    }    
 }
 #get-involved .categories {
-    display: flex;
+
+    @media(--desktop) {
+        display: flex;
+    }
+
 }
 #get-involved > p {
-    max-width: 65vw;
-    margin: 0 auto 3.5vw;
+    @media(--desktop) {
+        max-width: 65vw;
+        margin: 0 auto 3.5vw;
+    }
 }
 #get-involved article {
-    width: 33%;
-    padding: 0 3.3vw 3.3vw 3.3vw;
-    font-size: .9vw;
     display: flex;
     flex-direction: column;
 
+    @media(--mobile) {
+        margin-top: 8%;
+    }
+    @media(--desktop) {
+        width: 33%;
+        padding: 0 3.3vw 3.3vw 3.3vw;
+        font-size: .9vw;
+    }
     & p {
         margin-bottom: 2vw;
     }
 }
 #get-involved article:not(:last-of-type) {
-    border-right: 1px solid #ddd;
+    @media(--desktop) {    
+        border-right: 1px solid #ddd;
+    }
 }
 #get-involved img {
     display: block;
-    margin: 0 auto;
+
+    @media(--mobile) {
+        width: 10vw;      
+    }    
+    @media(--desktop) {
+        margin: 0 auto;       
+    }
 }
 #get-involved h3 {
     margin: .5vw 0 1.5vw;
@@ -41,5 +69,13 @@
 }
 
 #get-involved .btn {
-    max-width: 10vw;
+    @media(--mobile) {
+       margin: 5% 0; 
+       max-width: 190px;
+       text-align: center;   
+    }
+
+    @media(--desktop) {
+        max-width: 10vw;      
+    }
 }

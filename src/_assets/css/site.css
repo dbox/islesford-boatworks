@@ -12,6 +12,7 @@
 @import './components/_article.css';
 @import './components/_get-involved.css';
 
+@import './pages/_index.css';
 @import './pages/_schedule.css';
 @import './pages/_programs-events.css';
 @import './pages/_summer-youth-boatbuilding.css';
@@ -31,9 +32,7 @@
 }
 /* Write some css! */
 
-.btn {
 
-}
 body {
     color: var(--default-text);
     background: var(--light-bg);
@@ -51,174 +50,14 @@ a {
 
 
 #intro, #programs-events-section, #story, #newsletter, .container {
-    margin: 5vw 9vw;
-}
-#intro {
-    display: flex;
-    font-size: 1.2vw;
-}
+    margin: 5vw var(--mobile-gutter);
 
-#intro aside {
-    width: 35vw;
-    padding-left: 3vw;
-
-    & ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    & li {
-        margin-top: .3vw;
-        font-size: 1vw;
-    }
-    & li a:hover {
-        text-decoration: underline;
-    }
-    & h6 {
-        text-transform: uppercase;
-        color: #1A4055;
-        font-size: .8vw;
-        font-weight: 600;
-        margin-bottom: 1vw;
+    @media(--desktop) {
+        margin: 5vw 9vw;
     }
 }
 
-#intro article {
-    width: 65vw;
-    border-right: 1px solid #eee;
 
-    & p {
-        margin-right: 5vw;
-    }
-
-    & span {
-        display: block;
-        padding-top: 30px;
-    }
-
-}
-
-#programs-events-section {
-    display: flex;
-}
-
-#programs-events-section .card {
-    width: 23%;
-    margin-right: calc(8% / 3);
-    background: #fff;
-}
-#programs-events-section .card:last-child {
-    margin: 0;
-}
-
-
-a:hover {
-    text-decoration: none;
-}
-
-
-#story p a {
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-#story .top, #story .bottom {
-    display: flex;
-}
-#story .top {
-    padding-bottom: 3.5%;
-    border-bottom: 1px solid #ddd;
-}
-#story .top article:first-of-type {
-    order: 1;
-    width: 65%;
-
-    & p {
-        margin-bottom: 2.5vw;
-    }
-}
-#story .top article:nth-of-type(2) {
-    order: 0;
-    width: 32%;
-    margin-right: 3%;
-
-    & p {
-        margin-top: 2vw;
-    }
-}
-#story h2 {
-    font-size: 2.6vw;
-    letter-spacing: -.05em;
-    line-height: 1.2;
-    margin-bottom: 1.3vw;
-    font-weight: 100;
-}
-#story .bottom {
-}
-#story .bottom article {
-    width: 50%;
-    margin-top: 3%;
-}
-#story .bottom article:first-of-type {
-    border-right: 1px solid #ddd;
-    padding-right: 3%;
-
-    & p {
-        margin-top: 2vw;
-    }
-}
-
-#story .bottom article:nth-of-type(2) {
-    padding-left: 3%;
-
-    & a, & p {
-        margin-bottom: 2vw;
-    }
-}
-#story p {
-    font-size: 1.2vw;
-}
-
-#story .img-caption {
-    display: block;
-    position: relative;
-
-    &:hover {
-        &:after {
-            opacity: 1;
-        }
-    }
-
-
-    &::after {
-        transition: opacity .2s ease-out;
-        font-weight: 500;        
-        content: attr(data-tooltip);
-        width: 100%;
-        height: auto;
-        color: #fff;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0.0%, rgba(0, 0, 0, 0) 100%);
-        bottom: 0;
-        padding: 30% 5% 5%;
-        position: absolute;
-        opacity: 0;
-    }
-}
-#photo-break {
-    height: 60vh;
-    background-image: url("/static/images/gallery1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#donate-section {
-    text-align: center;
-}
-#donate-section {
-    padding: 5vw 7vw;
-}
 
 p + img + p {
     margin-top: 3em;

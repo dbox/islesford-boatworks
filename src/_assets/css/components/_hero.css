@@ -34,16 +34,23 @@
         height: 100%;
     }
     & article {
-        padding: 5vw 9vw;
+        padding: 50px var(--mobile-gutter);
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 50%;
+        width: 100%;
         height: auto;
         z-index: 2;
+
+        @media(--desktop) {
+            width: 50%;            
+            padding: 5vw 9vw;
+        }
     }
 }
 
 .faq .hero figure {
-    height: 30vw;
+    @media(--desktop) {
+        height: 30vw;
+    }
 }

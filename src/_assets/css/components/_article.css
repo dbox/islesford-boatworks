@@ -2,15 +2,23 @@
     display: flex;
     position: relative;
 
+    @media(--mobile) {
+        flex-direction: column;
+    }
+
     & .intro {
         /* margin-bottom: 2em; */
     }
 
     & > article {
         order: 0;
-        width: 65%;
-        border-right: 1px solid var(--light-border);
-        padding-right: 5%;
+  
+
+        @media(--desktop) {
+            width: 65%;
+            border-right: 1px solid var(--light-border);
+            padding-right: 5%;
+        }
 
         & img.inset {
             /* width: 47.25%; */
@@ -31,13 +39,17 @@
         }
     }
     & aside {
-
+        @media(--mobile) {
+            padding-top: 50px;
+         }
         order: 1;
-        width: 35%;
-        padding-left: 5%;
-        position: sticky;
-        top: 5%;
-        align-self: flex-start;    
+        @media(--desktop) {
+            width: 35%;
+            padding-left: 5%;
+            position: sticky;
+            top: 5%;
+            align-self: flex-start;                
+        }
         
         & .btn {
             margin: 2em 0;

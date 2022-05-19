@@ -31,8 +31,12 @@ h1, h2, blockquote {
     font-weight: 500;
 }
 h1 {
-    font-size: 56px;
+    font-size: 48px;
     letter-spacing: -0.05em;
+
+    @media(--desktop) {
+        font-size: 56px;
+    }
 }
 
 h1 em {
@@ -46,6 +50,9 @@ p a, span a, #intro ul li a {
 }
 .intro {
     font-weight: 500;
-    font-size: 1.3vw;
     line-height: 1.4;
+
+    @media(--desktop) {
+        font-size: 1.3vw;
+    }
 }

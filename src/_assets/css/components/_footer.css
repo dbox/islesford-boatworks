@@ -1,6 +1,6 @@
 footer[role=contentinfo] {
     background-color: var(--footer-bg);
-    padding: 5vw 9vw;
+    padding: 5vw var(--mobile-gutter);
     font-size: 15px;
     color: rgba(255,255,255,.75);    
     
@@ -10,6 +10,7 @@ footer[role=contentinfo] {
         min-height: 100vh;
     }
     @media (--desktop) {
+        padding: 5vw 9vw;        
         font-size: .9vw;
         display: flex;
         justify-content: space-between;        
