@@ -13,6 +13,20 @@
     & > article {
         order: 0;
   
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+
+            & tr:first-of-type td {
+                font-weight: 500;
+            }
+
+            & td {
+                border: 1px solid var(--light-border);
+                padding: 1.5%;
+            }
+        }
 
         @media(--desktop) {
             width: 65%;
@@ -39,6 +53,19 @@
         }
     }
     & aside {
+
+        & ul {
+            font-weight: 500;
+            line-height: 1.2;  
+            
+            & li {
+                margin-top: 14px;
+            }
+            @media(--desktop) {
+                font-size: .9vw;
+            }
+
+        }
         @media(--mobile) {
             padding-top: 50px;
          }

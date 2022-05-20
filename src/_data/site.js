@@ -10,4 +10,6 @@ module.exports = {
     // twitter: '@therealkni',
   },
   currentYear: new Date().getFullYear(),
+  bwStartDate: 'June 28th',
+  bwEndDate: 'August 5th'
 }
