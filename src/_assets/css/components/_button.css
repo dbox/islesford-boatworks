@@ -8,5 +8,6 @@
 
     &:hover {
         background-color: var(--button-primary-hover);
+        text-decoration: none;
     }
 }
