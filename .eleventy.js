@@ -3,6 +3,8 @@ const htmlmin = require('html-minifier')
 module.exports = function (eleventyConfig) {
   // Copy static assets
   eleventyConfig.addPassthroughCopy('src/static')
+  
+  eleventyConfig.addPassthroughCopy('src/_redirects');
 
   // Minify HTML in production
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
