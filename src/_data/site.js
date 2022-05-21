@@ -2,7 +2,7 @@ module.exports = {
   isProduction: process.env.ELEVENTY_ENV === 'dev',
   title: 'Islesford Boatworks',
   description: 'A non-profit community-based summer boatbuilding program for children ages 7 to 97 years young situated on Little Cranberry Island, Maine.',
-  url: 'https://www.islesfordboatworks.com',
+  url: 'https://www.islesfordboatworks.org',
   name: 'Islesford Boatworks',
   author: 'Islesford Boatworks',
   meta: {
