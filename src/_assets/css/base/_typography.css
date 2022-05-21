@@ -5,6 +5,7 @@
         url('../static/fonts/BostonSkylineClean.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: block;  
 }
 
 body, p > a {
