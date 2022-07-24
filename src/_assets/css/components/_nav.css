@@ -109,6 +109,7 @@ nav.primary {
             height: var(--nav-height);
             display: inline-block;
             margin: 0 auto;
+            transform: translateX(-20%);
         }
     
     }
