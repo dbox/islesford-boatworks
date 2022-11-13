@@ -10,6 +10,11 @@
    color: var(--boatworks-blue-darker);
 }
 
+.capital-campaign .hero article  p strong {
+    font-weight: 500;
+ }
+ 
+
 .capital-campaign .hero figure:after {
     background: rgba(255,255,255, .8);
     /* border: 5px solid green; */
