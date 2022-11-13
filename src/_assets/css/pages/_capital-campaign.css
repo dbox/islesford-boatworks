@@ -1,0 +1,20 @@
+.capital-campaign .phases {
+    background: #ecf4fe;
+    color: var(--boatworks-blue-darker);
+    padding: 8%;
+    font-size: 14px;
+}
+
+.capital-campaign .hero article  {
+   top: 5%;
+   color: var(--boatworks-blue-darker);
+}
+
+.capital-campaign .hero figure:after {
+    background: rgba(255,255,255, .8);
+    /* border: 5px solid green; */
+
+    @media(--desktop) {
+        display: none;
+    }
+}
