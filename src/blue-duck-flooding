@@ -1,17 +1,17 @@
 ---
 layout: base.njk
-title: The Islesford Half Marathon
+title: Blue Duck Flooding
 bodyClass: marathon
 changeFreq: monthly
 ---
 
-<section id="marathon-hero" class="hero">
+<section id="blue-duck-flood-hero" class="hero">
     <article>
-        <h1>The Islesford Half Marathon & 5k</h1>
-        <p>All proceeds go to Boatworks</p> 
+        <h1>Blue Duck Storm Damage</h1>
+        <p>Help us repair the Blue Duck!</p> 
 </p>
     </article>
-    <figure><img src="/static/images/marathon/header.webp"></figure>
+    <figure><img src="/static/images/blue-duck/blue-duck-flood.webp"></figure>
 
 </section>
 
@@ -20,18 +20,18 @@ changeFreq: monthly
     <aside>
 
   
-         <h4>Join us for the 2nd Annual Half Marathon & 5k!</h4>
+         <h4>Join us for the 2nd Annual Islesford Marathon & Half Marathon!</h4>
         <p>$40 per person. All runners get a Boatworks Marathon shirt (must sign up by Aug. 1, 2024). All proceeds go to Boatworks.</p>
     <a href="https://islesford-boatworks.square.site/product/1st-annual-half-marathan/284?cp=true&sa=true&sbp=false&q=false" target="_blank" class="btn">Register here</a>
         
 
     </aside>
     <article>
-        <p>Little Cranberry Island may be only 1 mile wide by 1.5 miles long, but that won't stop us creating a 13.1 (and 3.1) mile course for the 2nd Annual Islesford Half Marathon. </p>
+        <p>Little Cranberry Island may be only 1 mile wide by 1.5 miles long, but that won't stop us creating a 26.2 and 13.1 mile course for the 2nd Annual Islesford Half Marathon. </p>
             <p><strong>When:</strong> Sunday, August 4th @ 9 am (7:30 boat from NE Harbor)<br>
             <strong>Where:</strong>  Start at the end at the town field </p>
             <p>
-Meet at Town Field before the race to receive a number.</p>
+Meet at Islesford Boatworks before the race to receive a number.</p>
             <p> We'd like to give a huge Boatworks thanks to Marilyn and the rest of Caroll family for organizing this event!</p>
     </article>
 

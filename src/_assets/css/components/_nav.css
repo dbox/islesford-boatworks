@@ -31,10 +31,13 @@ nav.primary {
             margin: 0;
             padding: 0;
             text-align: center;
-    
+
+            
             &:not(:nth-child(1)) a {
                 padding: 1.5vw;
                 padding-top: calc(var(--nav-height) - 14px);
+xxz 
+    
     
                 &:hover span:after {
                     height: .5rem;
@@ -175,7 +178,7 @@ nav.subnav {
 
     & ul li {
 
-        &:nth-child(1),  &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+        &:nth-child(1),  &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7) {
 
             & a {
                 padding: .5vw 1vw;
