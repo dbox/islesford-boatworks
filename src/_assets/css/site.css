@@ -39,6 +39,9 @@ body {
     background: var(--light-bg);
 }
 
+p {
+    text-wrap: pretty;
+}
 a {
     text-decoration: none;
     color: #1A4055;
