@@ -1,0 +1,35 @@
+body.thanks .container {
+    padding: 5%;
+    min-height: calc(90vh - 180px);
+    margin: 0;
+    background: #eee;
+
+     @media(--desktop) { 
+    display: flex;
+        padding: 40px 20vw;
+ }
+}
+body.thanks h1 {
+    font-size: 24px;
+    margin: 9% 0;
+ @media(--desktop) { 
+    font-size: 38px;
+ }
+
+}
+body.thanks article , body.thanks figure{
+    width: 100%
+}
+
+body.thanks article  {
+    display: flex;
+    padding-right: 5vw;
+     /* justify-content: center; */
+     align-items: center;
+     padding-bottom: 15%;
+}
+iframe {
+    aspect-ratio: 9 / 16;
+    width: 100% !important;
+    border-radius: 10px;
+}

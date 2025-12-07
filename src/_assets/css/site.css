@@ -19,6 +19,7 @@
 @import './pages/_our-boats.css';
 @import './pages/_faq.css';
 @import './pages/_about.css';
+@import './pages/_thanks.css';
 @import './pages/_capital-campaign.css';
 
 @keyframes fadeup {
@@ -66,3 +67,4 @@ a {
 p + img + p {
     margin-top: 3em;
 }
+
