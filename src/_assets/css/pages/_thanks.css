@@ -23,10 +23,14 @@ body.thanks article , body.thanks figure{
 
 body.thanks article  {
     display: flex;
-    padding-right: 5vw;
+
      /* justify-content: center; */
      align-items: center;
      padding-bottom: 15%;
+
+      @media(--desktop) { 
+    padding-right: 5vw;
+ }
 }
 iframe {
     aspect-ratio: 9 / 16;
