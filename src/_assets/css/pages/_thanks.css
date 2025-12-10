@@ -2,7 +2,7 @@ body.thanks .container {
     padding: 5%;
     min-height: calc(90vh - 180px);
     margin: 0;
-    background: #eee;
+    background: #f3f3f3;
 
      @media(--desktop) { 
     display: flex;
@@ -20,7 +20,14 @@ body.thanks h1 {
 body.thanks article , body.thanks figure{
     width: 100%
 }
+body.thanks article img {
+    display: none;
 
+     @media(--desktop) { 
+        display: block;
+        max-width: 60%
+ }
+}
 body.thanks article  {
     display: flex;
 
