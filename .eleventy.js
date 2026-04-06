@@ -1,14 +1,31 @@
 const htmlmin = require('html-minifier')
+const { DateTime } = require("luxon"); // You might need to run 'npm install luxon'
+const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
+  
+  // --- NEW FILTERS START ---
+  
+  // 1. The Date Filter (Fixes the htmlDateString error)
+  eleventyConfig.addFilter("htmlDateString", (dateObj, format = "yyyy-LL-dd") => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat(format);
+  });
+
+  // 2. The Markdown Filter (Lets you use **bold** in your YAML)
+  const mdLib = markdownIt({ html: true });
+  eleventyConfig.addFilter("md", (content) => {
+    if (!content) return "";
+    return mdLib.renderInline(content);
+  });
+
+  // --- NEW FILTERS END ---
+
   // Copy static assets
   eleventyConfig.addPassthroughCopy('src/static')
-  
   eleventyConfig.addPassthroughCopy('src/_redirects');
 
   // Minify HTML in production
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
-    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
     if (
       process.env.ELEVENTY_ENV === 'production' &&
       outputPath &&
@@ -20,11 +37,9 @@ module.exports = function (eleventyConfig) {
         collapseWhitespace: true,
       })
     }
-
     return content
   })
 
-  // Watch changes to source assets that are compiled outside of 11ty
   eleventyConfig.addWatchTarget('./src/_assets/')
 
   return {
