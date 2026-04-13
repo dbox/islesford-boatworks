@@ -67,7 +67,43 @@ changeFreq: yearly
   {# 3. MAIN CONTENT (The History section from below your dashes) #}
   <section class="history-content container">
     <hr>
-    {{ content | safe }}
+    <div class="history-layout">
+      <div class="history-main">
+        {{ content | safe }}
+      </div>
+
+      {% if sidebar %}
+        <aside class="history-sidebar" aria-labelledby="legacy-fund-heading">
+          {% set progressPercent = 0 %}
+          {% if sidebar.current_amount and sidebar.goal_amount %}
+            {% set progressPercent = ((sidebar.current_amount / sidebar.goal_amount) * 100) %}
+          {% endif %}
+          <div class="sidebar-card">
+            <p class="sidebar-kicker">{{ sidebar.heading }}</p>
+
+            {% if sidebar.current_amount and sidebar.goal_amount %}
+              <!-- <h3 id="legacy-fund-heading" class="sidebar-amount">${{ sidebar.current_amount | intComma }}</h3> -->
+              <div class="sidebar-meter" aria-hidden="true">
+                <span class="sidebar-meter-fill" style="width: {{ progressPercent | round(1) }}%;"></span>
+              </div>
+              <!-- <p class="sidebar-goal">Our goal is ${{ sidebar.goal_amount | intComma }}.</p> -->
+            {% endif %}
+
+            {% if sidebar.content %}
+              <div class="sidebar-copy">
+                {{ sidebar.content | md | safe }}
+              </div>
+            {% endif %}
+
+            {% if sidebar.buttonHref and sidebar.buttonText %}
+              <p class="sidebar-action">
+                <a href="{{ sidebar.buttonHref }}" class="sidebar-button">{{ sidebar.buttonText }}</a>
+              </p>
+            {% endif %}
+          </div>
+        </aside>
+      {% endif %}
+    </div>
   </section>
 
 </article>

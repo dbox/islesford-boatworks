@@ -18,6 +18,14 @@ module.exports = function (eleventyConfig) {
     return mdLib.renderInline(content);
   });
 
+  eleventyConfig.addFilter("intComma", (value) => {
+    const number = Number(value);
+    if (Number.isNaN(number)) return value;
+    return new Intl.NumberFormat("en-US", {
+      maximumFractionDigits: 0,
+    }).format(number);
+  });
+
   // --- NEW FILTERS END ---
 
   // Copy static assets

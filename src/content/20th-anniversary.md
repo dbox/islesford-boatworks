@@ -29,13 +29,13 @@ events:
   
   # Nested list of cards
   cards:
-    - date: 2026-06-27
-      title: "Unveiling the New Chandlery"
-      excerpt: >
-        We’re transforming the former bathroom space into something useful and lasting, inspired by the island tradition of practical craft and neighborly problem-solving.
-      href: "/events/new-chandlery/"
-      image: "/static/images/20th/chandlery.webp"
-      image_alt: "Chandlery rendering / interior view"
+    # - date: 2026-06-27
+    #   title: "Unveiling the New Chandlery"
+    #   excerpt: >
+    #     We’re transforming the former bathroom space into something useful and lasting, inspired by the island tradition of practical craft and neighborly problem-solving.
+    #   href: "/events/new-chandlery/"
+    #   image: "/static/images/20th/chandlery.webp"
+    #   image_alt: "Chandlery rendering / interior view"
 
     - date: 2026-08-01
       title: "The Blue Duck Derby"
@@ -74,30 +74,34 @@ events:
 # 3 102,000 sidebar
 sidebar:
   heading: "The Legacy Fund"
-  current_amount: 102000
-  goal_amount: 250000
+  current_amount: 5000
+  goal_amount: 102000
   content: |
-    Our goal is to raise **$50,000** this summer. Every dollar ensures 
-    that local kids keep learning the trade.
+    Our goal — $102,000 — is intentional. It honors Arthur “Chummy” Spurling, the last full-time boatbuilder of the Cranberry Isles, who lived to the remarkable age of 102. Chummy’s craftsmanship, humility, and ingenuity shaped not just Little Cranberry, but generations of island families who learned from his example and carried forward his tradition of maritime skill and integrity.<br><br>
+    Chummy’s legacy embodies everything Islesford Boatworks stands for: resourcefulness, patience, authentic mentorship, and the belief that young people grow best when they build real things with real tools in a community that trusts them..
   buttonText: "Support the Legacy"
-  buttonHref: "/donate/"
+  buttonHref: "https://www.paypal.com/donate/?hosted_button_id=2S3ZEMK5LS7X4"
   
 # 4. SEO & Social Sharing
 
 ---
 
-## The Legacy Fund
-## Blue Duck Expansion & Anchoring Our Future
+## The Legacy Fund: Blue Duck Expansion & Anchoring Our Future
 
 As Islesford Boatworks celebrates **20 years** of *building* kids with boats, we are launching a generational initiative to strengthen and expand our work across the Cranberry Isles. 
 
 The Legacy Fund ensures that our next 20 years are even more impactful than the first — for the islands, for our young people, and for the wide community our work continues to reach.
 
+<img src="/static/images/20th/20th-badge-gold.svg">
+<BR><BR>
+
 ### A Local Program With Global Reach
 
 Though our home is on the Cranberry Isles, the impact of Islesford Boatworks has traveled far beyond the shores of Maine.
 
-Over the past two decades: 
+
+<br><br>
+Over the past two decades: <br><br>
 
 - Young builders have gone on to become engineers, educators, designers, mariners, scientists, artists, and craftspeople — taking the ethos of IB into careers and communities around the world.
 
