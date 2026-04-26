@@ -20,6 +20,7 @@
 -->
 {% set meta_description = description or (seo and seo.description) or site.description %}
 {% set social_image = featured_image or (seo and seo.shareImage) or site.meta.default_social_image %}
+{% set absolute_social_image = social_image and (site.url + social_image) %}
 <meta name="description" content="{{ meta_description }}">
 
 <!-- Control the behavior of search engine crawling and indexing -->
@@ -61,8 +62,8 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
-{% if social_image %}
-  <meta property="og:image" content="{% if env == 'production' %}{{ site.url }}{% endif %}{{ social_image }}"/>
+{% if absolute_social_image %}
+  <meta property="og:image" content="{{ absolute_social_image }}"/>
 {% endif %}
 <meta property="og:description" content="{{ meta_description }}"/>
 <meta property="og:site_name" content="{{ site.title }}">
@@ -73,8 +74,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{ site.meta.twitter }}">
 <meta name="twitter:creator" content="{{ site.meta.twitter }}">
-{% if social_image %}
-  <meta name="twitter:image" content="{% if env == 'production' %}{{ site.url }}{% endif %}{{ social_image }}">
+{% if absolute_social_image %}
+  <meta name="twitter:image" content="{{ absolute_social_image }}">
 {% endif %}
 
 <!-- disallow Twitter from using your site's info for personalization purposes -->
