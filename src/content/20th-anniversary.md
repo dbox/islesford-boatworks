@@ -92,7 +92,7 @@ As Islesford Boatworks celebrates **20 years** of *building* kids with boats, we
 <BR><BR>
 The Legacy Fund ensures that our next 20 years are even more impactful than the first — for the islands, for our young people, and for the wide community our work continues to reach.
 <BR><BR>
-<a href="https://www.instagram.com/islesfordboatworks" target="_blank"><img src="/static/images/20th/louise-20-desktop.webp"></a>
+<a href="https://www.instagram.com/islesfordboatworks" target="_blank"><img src="/static/images/20th/louise-20-desktop.webp" class="desktop"><img src="/static/images/20th/louise-20th-mobile.webp" class="mobile"></a>
 <BR><BR>
 
 ### A Local Program With Global Reach

@@ -69,3 +69,17 @@ p + img + p {
     margin-top: 3em;
 }
 
+img.desktop {
+    display: none;
+
+    @media(--desktop) {
+        display: block;
+    }
+}
+img.mobile {
+    display: block;
+
+    @media(--desktop) {
+        display: none;
+    }
+}
