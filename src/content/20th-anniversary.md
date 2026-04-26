@@ -4,7 +4,7 @@ title: "20th Anniversary"
 permalink: "/20th-anniversary/"
 seo:
   description: "Join Islesford Boatworks as we celebrate our 20th Anniversary and launch the Legacy Fund."
-  shareImage: "/assets/images/social-preview.jpg"
+  shareImage: "/static/images/20th/20th-anniversary-share.webp"
 
 # ---------------------------------------------------------------------------------------
 # 1. Hero / intro
@@ -15,7 +15,7 @@ hero:
     image: "/static/images/20th/20th-badge-gold.svg"
     title: "20th Anniversary Badge"
   introBox: >
-    This year marks 20 years of Islesford Boatworks on Islesford. From the beginning, our mission has been simple and steady: build community with boats by creating hands-on experiences where young people learn real skills and discover what they’re capable of. Along the way, the Blue Duck has become a place for islanders, seasonal families, visitors, and artists to gather, share knowledge, and contribute to something lasting. We hope you’ll join us throughout the year as we celebrate the work, the tradition, and the people behind it.
+    This year marks 20 years of Islesford Boatworks on Little Cranberry Island. From the beginning, our mission has been simple and steady: build community with boats by creating hands-on experiences where young people learn real skills and discover what they’re capable of. Along the way, the Blue Duck has become a place for islanders, seasonal families, visitors, and artists to gather, share knowledge, and contribute to something lasting. We hope you’ll join us throughout the year as we celebrate the work, the tradition, and the people behind it.
 
 # ---------------------------------------------------------------------------------------
 # 2 The Events  
