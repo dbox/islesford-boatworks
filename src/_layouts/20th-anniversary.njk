@@ -14,7 +14,7 @@ changeFreq: yearly
 
     </div>
     <img src="{{ hero.image }}" alt="{{ hero.title }}" class="hero-bg">  
-    <div class="badge"><img src="{{ hero.badge.image }}" alt="{{ hero.badge.title }}" shadow="30 1">  </div> 
+    <div class="badge"><img src="{{ hero.badge.image }}" alt="{{ hero.badge.title }}" >  </div> 
     <div class="intro-box">
   {# Use the | md | safe filter to allow markdown stars in your introBox #}
   {{ hero.introBox | md | safe }}
@@ -38,8 +38,13 @@ changeFreq: yearly
             <div class="card-thumb">
               <div class="event-date-badge">
                 <div class="date-wrap">
-                  <span class="month">{{ card.date | htmlDateString("MMM") }}</span>
-                  <span class="day">{{ card.date | htmlDateString("d") }}</span>
+                  {% if card.date %}
+                    <span class="month">{{ card.date | htmlDateString("MMM") }}</span>
+                    <span class="day">{{ card.date | htmlDateString("d") }}</span>
+                  {% else %}
+                    <span class="month">Date</span>
+                    <span class="day">TBD</span>
+                  {% endif %}
                 </div>
               </div>                 
               <img src="{{ card.image }}" alt="{{ card.image_alt }}">

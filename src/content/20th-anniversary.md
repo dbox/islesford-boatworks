@@ -29,13 +29,13 @@ events:
   
   # Nested list of cards
   cards:
-    # - date: 2026-06-27
-    #   title: "Unveiling the New Chandlery"
-    #   excerpt: >
-    #     We’re transforming the former bathroom space into something useful and lasting, inspired by the island tradition of practical craft and neighborly problem-solving.
-    #   href: "/events/new-chandlery/"
-    #   image: "/static/images/20th/chandlery.webp"
-    #   image_alt: "Chandlery rendering / interior view"
+    - date: 
+      title: "Unveiling the New Chandlery"
+      excerpt: >
+        We’re transforming the former bathroom space into something useful and lasting, inspired by the island tradition of practical craft and neighborly problem-solving.
+      href: "/events/new-chandlery/"
+      image: "/static/images/20th/chandlery.webp"
+      image_alt: "Chandlery rendering / interior view"
 
     - date: 2026-08-01
       title: "The Blue Duck Derby"
@@ -89,10 +89,10 @@ sidebar:
 ## The Legacy Fund: Blue Duck Expansion & Anchoring Our Future
 
 As Islesford Boatworks celebrates **20 years** of *building* kids with boats, we are launching a generational initiative to strengthen and expand our work across the Cranberry Isles. 
-
+<BR><BR>
 The Legacy Fund ensures that our next 20 years are even more impactful than the first — for the islands, for our young people, and for the wide community our work continues to reach.
-
-<img src="/static/images/20th/20th-badge-gold.svg">
+<BR><BR>
+<a href="https://www.instagram.com/islesfordboatworks" target="_blank"><img src="/static/images/20th/louise-20-desktop.webp"></a>
 <BR><BR>
 
 ### A Local Program With Global Reach
@@ -112,3 +112,6 @@ Over the past two decades: <br><br>
 - The Artist in Residence program has connected Islesford to a global creative network, sending island-inspired art, craft, and storytelling to exhibitions, publications, and audiences well beyond Maine.
 
 - Alumni and friends of the program now live across the U.S. and internationally, yet remain anchored to the formative experiences they had in the Blue Duck.
+  
+
+We hope that you'll join is in supporting the next 20 years and beyond!
