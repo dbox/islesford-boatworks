@@ -15,7 +15,9 @@ hero:
     image: "/static/images/20th/20th-badge-gold.svg"
     title: "20th Anniversary Badge"
   introBox: >
-    This year marks 20 years of Islesford Boatworks on Little Cranberry Island. From the beginning, our mission has been simple and steady: build community with boats by creating hands-on experiences where young people learn real skills and discover what they’re capable of. Along the way, the Blue Duck has become a place for islanders, seasonal families, visitors, and artists to gather, share knowledge, and contribute to something lasting. We hope you’ll join us throughout the year as we celebrate the work, the tradition, and the people behind it.
+    This year marks 20 years of Islesford Boatworks on Little Cranberry Island. From the beginning, our mission has been simple and steady: build community with boats by creating hands-on experiences where young people learn real skills and discover what they’re capable of. Along the way, our home in the <a href="/the-blue-duck/">Blue Duck</a> has become a place for islanders, seasonal families, visitors, and artists to gather, share knowledge, and contribute to something lasting. We hope you’ll join us throughout our 20th anniversary year as we celebrate the work, the tradition, and the people behind it.
+    <br><br>
+    We’re transforming the former Blue Duck bathroom space into something useful and lasting, inspired by the island tradition of practical craft and neighborly problem-solving.
 
 # ---------------------------------------------------------------------------------------
 # 2 The Events  
@@ -40,7 +42,7 @@ events:
     - date: 2026-08-01
       title: "The Blue Duck Derby"
       excerpt: >
-        Hundreds of rubber ducks race to the abutments. Big prizes and bragging rights. Adopt a duck and help fuel the future of Boatworks.
+        Hundreds of rubber ducks race to the granite abutments in the harbor in front of the Blue Duck. Big prizes and bragging rights. Adopt a duck and help fuel the future of Boatworks.
       href: "/events/blue-duck-derby/"
       image: "/static/images/20th/blue_duck_derby.webp"
       image_alt: "Rubber duck graphic"
