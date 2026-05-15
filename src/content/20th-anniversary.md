@@ -17,7 +17,7 @@ hero:
   introBox: >
     This year marks 20 years of Islesford Boatworks on Little Cranberry Island. From the beginning, our mission has been simple and steady: build community with boats by creating hands-on experiences where young people learn real skills and discover what they’re capable of. Along the way, our home in the <a href="/the-blue-duck/">Blue Duck</a> has become a place for islanders, seasonal families, visitors, and artists to gather, share knowledge, and contribute to something lasting. We hope you’ll join us throughout our 20th anniversary year as we celebrate the work, the tradition, and the people behind it.
     <br><br>
-    We’re transforming the former Blue Duck bathroom space into something useful and lasting, inspired by the island tradition of practical craft and neighborly problem-solving.
+    
 
 # ---------------------------------------------------------------------------------------
 # 2 The Events  
@@ -31,12 +31,12 @@ events:
   
   # Nested list of cards
   cards:
-    - date: 
+    - date: 2026-06-27
       title: "Unveiling the New Chandlery"
       excerpt: >
         We’re transforming the former bathroom space into something useful and lasting, inspired by the island tradition of practical craft and neighborly problem-solving.
       href: "/events/new-chandlery/"
-      image: "/static/images/20th/chandlery.webp"
+      image: "/static/images/20th/chandlery2.webp"
       image_alt: "Chandlery rendering / interior view"
 
     - date: 2026-08-01
@@ -63,12 +63,12 @@ events:
       image: "/static/images/20th/marathon.webp"
       image_alt: "Runners at start line"
 
-    - date: 2026-08-08
-      title: "The 2026 Harbor Showdown"
+    - date: 2026-08-09
+      title: "Quick and Daring Boatbuilding"
       excerpt: >
-        Teams will row or sail (no motors allowed) to checkpoints around the harbor, collecting stamps at each stop. It’s part race, part strategy, and all fun.
+       A special 20th anniversary boat challenge! In this one-week program, teams (4th grade+) design, build, and race full-size boats. It’s part strategy, all fun!
       href: "/events/harbor-showdown/"
-      image: "/static/images/20th/harbor_showdown.webp"
+      image: "/static/images/20th/quick-and-daring.webp"
       image_alt: "Rowboat on the harbor"
 
 

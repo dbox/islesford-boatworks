@@ -177,11 +177,11 @@ body {
 
 }
 
-.twenty-anniversary .events-section .event-card:first-of-type .event-date-badge .day {
+/* .twenty-anniversary .events-section .event-card:first-of-type .event-date-badge .day {
        @media(--desktop) {
         font-size: 1vw;
     }
-}
+} */
 
 .twenty-anniversary .events-section .card-content {
     color: #1A4055;
