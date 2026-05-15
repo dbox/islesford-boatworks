@@ -63,10 +63,10 @@ events:
       image: "/static/images/20th/marathon.webp"
       image_alt: "Runners at start line"
 
-    - date: 2026-08-09
+    - date: 2026-08-10
       title: "Quick and Daring Boatbuilding"
       excerpt: >
-       A special 20th anniversary boat challenge! In this one-week program, teams (4th grade+) design, build, and race full-size boats. It’s part strategy, all fun!
+       A special 20th anniversary boat challenge!  In this bonus one-week program, teams (4th grade+) design, build, and race full-size boats. It’s part strategy, all fun!
       href: "/events/harbor-showdown/"
       image: "/static/images/20th/quick-and-daring.webp"
       image_alt: "Rowboat on the harbor"
