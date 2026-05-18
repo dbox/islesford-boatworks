@@ -1,0 +1,53 @@
+.duck-derby .derby-prizes {
+    display: grid;
+    gap: 1em;
+    margin-top: 4em;
+}
+
+.duck-derby h2 {
+
+         @media(--desktop) {
+        font-size: 32px;
+        }
+
+}
+
+.duck-derby .derby-prize {
+    display: grid;
+    gap: 5%;
+    align-items: center;
+
+    @media(--desktop) {
+        grid-template-columns: minmax(280px, 43%) 1fr;
+    }
+
+    & figure {
+        margin: 0;
+    }
+
+    & img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+
+    & div {
+        background: var(--white);
+        padding: 7%;
+    }
+
+    & h3 {
+        margin-top: 0;
+    }
+
+    & p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media(--mobile) {
+    .duck-derby .derby-prize {
+        gap: 0;
+    }
+}

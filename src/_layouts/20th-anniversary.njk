@@ -32,7 +32,11 @@ changeFreq: yearly
 
       <div class="events-grid">
         {% for card in events.cards %}
-          <div class="event-card">
+          {% if card.link %}
+            <a href="{{ card.link }}" class="event-card">
+          {% else %}
+            <div class="event-card">
+          {% endif %}
             
             {# Image Container #}
             <div class="card-thumb">
@@ -63,7 +67,11 @@ changeFreq: yearly
               </p>
               
             </div>
-          </div>
+          {% if card.link %}
+            </a>
+          {% else %}
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
