@@ -84,3 +84,11 @@ img.mobile {
         display: none;
     }
 }
+
+.mobile-only {
+    display: none;
+
+    @media(--mobile) {
+        display: initial;
+    }
+}

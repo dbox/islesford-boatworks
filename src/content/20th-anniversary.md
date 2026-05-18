@@ -44,7 +44,7 @@ events:
       excerpt: >
         Hundreds of rubber ducks race to the granite abutments in the harbor in front of the Blue Duck. Big prizes and bragging rights. Adopt a duck and help fuel the future of Boatworks.
       link: "/blue-duck-derby/"
-      href: "/events/blue-duck-derby/"
+      href: "/blue-duck-derby/"
       image: "/static/images/20th/blue_duck_derby.webp"
       image_alt: "Rubber duck graphic"
 
