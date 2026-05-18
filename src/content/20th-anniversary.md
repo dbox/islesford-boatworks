@@ -68,7 +68,8 @@ events:
       title: "Quick and Daring Boatbuilding"
       excerpt: >
        A special 20th anniversary boat challenge!  In this bonus one-week program, teams (4th grade+) design, build, and race full-size boats. It’s part strategy, all fun!
-      href: "/events/harbor-showdown/"
+      link: "/quick-and-daring/"
+      href: "/quick-and-daring/"
       image: "/static/images/20th/quick-and-daring.webp"
       image_alt: "Rowboat on the harbor"
 
