@@ -23,7 +23,7 @@ hero:
 # 2 The Events  
 events:
   heading: "Celebrate with us!"
-  subheading: "20th Anniversary Special Events"
+  subheading: "20th Anniversary Special Events<BR><BR>"
   body: >
     Twenty years calls for more than one celebration.
     We’re marking the milestone with a lineup of events all summer long.
@@ -78,13 +78,13 @@ events:
 # 3 102,000 sidebar
 sidebar:
   heading: "The Legacy Fund"
-  current_amount: 5000
+  current_amount: 7332
   goal_amount: 102000
   content: |
     Our goal — $102,000 — is intentional. It honors Arthur “Chummy” Spurling, the last full-time boatbuilder of the Cranberry Isles, who lived to the remarkable age of 102. Chummy’s craftsmanship, humility, and ingenuity shaped not just Little Cranberry, but generations of island families who learned from his example and carried forward his tradition of maritime skill and integrity.<br><br>
     Chummy’s legacy embodies everything Islesford Boatworks stands for: resourcefulness, patience, authentic mentorship, and the belief that young people grow best when they build real things with real tools in a community that trusts them..
-  buttonText: "Support the Legacy"
-  buttonHref: "https://www.paypal.com/donate/?hosted_button_id=2S3ZEMK5LS7X4"
+  buttonText: "Help us reach our goal"
+  buttonHref: "https://givebutter.com/BoatworksLegacyFund"
   
 # 4. SEO & Social Sharing
 
